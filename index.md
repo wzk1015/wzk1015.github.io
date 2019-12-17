@@ -8,7 +8,7 @@
 计算机科学与技术专业
 
 
-![照片](/photo.png)
+<img src="/zhengjianzhao.jpg" width="20%">
 
 ### 研究方向：
 - 计算机视觉
