@@ -10,7 +10,7 @@
 计算机科学与技术专业
 
 
-<img src="/photo.png" width="20%">
+<img src="/photo.png" width="30%">
 
 ### 研究方向：
 - 计算机视觉
