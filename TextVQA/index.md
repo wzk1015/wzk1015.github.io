@@ -1,5 +1,5 @@
 # Towards VQA Models That Can Read
-<img src="/1.png" style="zoom: 33%;" />
+<img src="/TextVQA/1.png" style="zoom: 33%;" />
 
 原文链接：https://arxiv.org/pdf/1904.08920
 
