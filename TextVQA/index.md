@@ -1,5 +1,5 @@
 # Towards VQA Models That Can Read
-<img src="C:\Users\ThinkPad\AppData\Roaming\Typora\typora-user-images\image-20200206225631012.png" alt="image-20200206225631012" style="zoom: 33%;" />
+<img src="/1.png" style="zoom: 33%;" />
 
 原文链接：https://arxiv.org/pdf/1904.08920
 
@@ -11,11 +11,11 @@ VQA (visual question answering) 是视觉推理的一个方向，给定图片和
 
 为了解决这个任务，研究者基于Open Images提出了TextVQA数据集，对前者中的图片提出了各种需要识别文本才能解决的问题以及相应的答案。
 
-<img src="C:\Users\ThinkPad\AppData\Roaming\Typora\typora-user-images\image-20200206233021463.png" alt="image-20200206233021463" style="zoom: 50%;" />
+<img src=/2.png" alt="image-20200206233021463" style="zoom: 50%;" />
 
 图中为TextVQA数据集中的部分数据示例。研究者将现有的VQA模型在该数据集上运行，正确率仅有14%左右，可见该任务仍有很大的研究价值。
 
-<img src="C:\Users\ThinkPad\AppData\Roaming\Typora\typora-user-images\image-20200207004732652.png" alt="image-20200207004732652" style="zoom: 67%;" />
+<img src="/3.png" style="zoom: 67%;" />
 
 上图为数据集中对于问题长度、答案长度、文本数目、常见问题、常见回答等的统计图。
 
@@ -29,7 +29,7 @@ VQA (visual question answering) 是视觉推理的一个方向，给定图片和
 
 ## Model
 
-<img src="C:\Users\ThinkPad\AppData\Roaming\Typora\typora-user-images\image-20200206234638222.png" alt="image-20200206234638222"  />
+<img src="/4.png" />
 
 如图，模型分为VQA部分、读取部分和回答部分。VQA部分根据问题对图片提取的特征进行注意力加权，对应传统VQA；读取部分根据问题对OCR结果进行注意力加权；回答部分根据前两部分的结果输出答案。
 
@@ -39,7 +39,7 @@ VQA (visual question answering) 是视觉推理的一个方向，给定图片和
 
 图片的空间特征分别经过了grid-based和region-based两种方式提取，前者使用了ResNet152，后者使用了Faster R-CNN。提取的特征fI(v)与fQ(q)一起经过注意力机制得到加权的空间注意力，得到的结果与fQ(q)进行组合。整体计算过程可以写为：
 
-<img src="C:\Users\ThinkPad\AppData\Roaming\Typora\typora-user-images\image-20200207000828744.png" alt="image-20200207000828744" style="zoom: 80%;" />
+<img src="/5.png" style="zoom: 80%;" />
 
 fVQA(v,q)随后经过全连接层MLP生成答案空间上a1~aN的概率分布p1~pN。
 
@@ -49,7 +49,7 @@ fVQA(v,q)随后经过全连接层MLP生成答案空间上a1~aN的概率分布p1~
 
 后续部分与VQA部分类似，区别在于将fI(v)更换为OCR结果fO(s)。虽然fA和fcomb与VQA部分结构一致，但参数是独立训练的。
 
-<img src="C:\Users\ThinkPad\AppData\Roaming\Typora\typora-user-images\image-20200207003837569.png" alt="image-20200207003837569" style="zoom:80%;" />
+<img src="/6.png" style="zoom:80%;" />
 
 此外，上述过程中忽略了OCR结果的顺序信息，因此将OCR的注意力权重与上述结果拼接在一起，以向模型提供原始OCR结果的顺序信息。
 
@@ -59,7 +59,7 @@ fVQA(v,q)随后经过全连接层MLP生成答案空间上a1~aN的概率分布p1~
 
 回答部分决定答案来源，包括答案空间a1~aN以及OCR结果s1~sM，如果来自OCR结果则使用复制模块输出答案。计算过程写为
 
-<img src="C:\Users\ThinkPad\AppData\Roaming\Typora\typora-user-images\image-20200207004045167.png" alt="image-20200207004045167" style="zoom:80%;" />
+<img src="/7.png" style="zoom:80%;" />
 
 其中";"代表拼接。经过MLP后对于答案空间a1~aN以及OCR结果s1~sM分别进行log运算（而非softmax），以应对答案同时在答案空间以及OCR结果中的可能。
 
@@ -69,7 +69,7 @@ fVQA(v,q)随后经过全连接层MLP生成答案空间上a1~aN的概率分布p1~
 
 ## Experiment
 
-![image-20200207004941027](C:\Users\ThinkPad\AppData\Roaming\Typora\typora-user-images\image-20200207004941027.png)
+<img src="/8.png" style="zoom:80%;" />
 
 作者衡量了启发性基准（左图）以及训练模型（右图）的准确率。
 
@@ -81,13 +81,13 @@ fVQA(v,q)随后经过全连接层MLP生成答案空间上a1~aN的概率分布p1~
 
 
 
-![image-20200207005013193](C:\Users\ThinkPad\AppData\Roaming\Typora\typora-user-images\image-20200207005013193.png)
+<img src="/9.png" style="zoom:80%;" />
 
 研究者还发现LoRRA模型能够提升Pythia在原有的VQA数据集上的准确率，可见TextVQA的任务有助于提升VQA模型对于图像的理解。
 
 
 
-![image-20200207012113520](C:\Users\ThinkPad\AppData\Roaming\Typora\typora-user-images\image-20200207012113520.png)
+<img src="/10.png" style="zoom:80%;" />
 
 研究者最后给出了LoRRA模型在TextVQA数据集上的部分预测结果以及答案来源，绿色为正确，蓝色为部分正确，红色为错误。
 
