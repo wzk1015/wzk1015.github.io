@@ -22,7 +22,7 @@
 - 清华大学附属中学 (2015.9-2018.6)
 - 北京航空航天大学 (2018.9-)
 
-### 主页:   _www.wzk1015.xyz_
+### 主页:   _www.wzk.plus_
 ### 邮箱:   _wzk1015@buaa.edu.cn_
 ### Github：_www.github.com/wzk1015_
 
