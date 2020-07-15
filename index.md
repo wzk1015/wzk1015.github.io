@@ -33,7 +33,7 @@
 - HRM架构CPU设计 
 	[介绍](https://www.cnblogs.com/zkwang/p/12771330.html)  [仓库](https://github.com/LittleNyima/HRM-Architecture)
 - 文字版三国杀
-	[介绍](https://www.cnblogs.com/zkwang/p/12771330.html)  [仓库](https://github.com/wzk1015/sanguosha) 
+	[介绍](https://www.cnblogs.com/zkwang/p/13226810.html)  [仓库](https://github.com/wzk1015/sanguosha) 
 - 基物实验小程序 
 	[仓库](https://gitee.com/wojiaocbj/cbjtest_small_app)
 
