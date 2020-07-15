@@ -1,16 +1,14 @@
-### wzk's homepage
+## 个人主页
 
-
-## **王肇凯**
+### 王肇凯
 
 2018级本科生
 
-北京航空航天大学高等理工学院 计算机科学与技术专业
+北京航空航天大学高等理工学院 — 计算机科学与技术专业
 
-北京大学国家发展研究院 经济学双学位在读
+北京大学国家发展研究院 — 经济学双学位
 
-
-<img src="/photo.png" width="30%">
+<img src="photo.jpeg" width="30%">
 
 ### 研究方向：
 - 计算机视觉
@@ -27,17 +25,20 @@
 - 北京航空航天大学 2018.9-
 
 ### 研究经历
-- 中科院自动化所暑期科研 2019.8
-- 北航Colab实验室实习   2019.8-
-- 哈佛大学远程科研项目   2020.7-2020.12
+- 中科院自动化所暑期科研  2019.8
+- 北航Colab实验室实习       2019.7-
+- 哈佛大学远程科研项目      2020.7-2020.12
 
 ### 其他项目
-- HRM架构CPU设计 _github.com/LittleNyima/HRM-Architecture_
-- 文字版三国杀    _github.com:wzk1015/sanguosha_
-- 基物实验小程序  _gitee.com/wojiaocbj/cbjtest_small_app_
+- HRM架构CPU设计 
+	[介绍](https://www.cnblogs.com/zkwang/p/12771330.html)  [仓库](https://github.com/LittleNyima/HRM-Architecture)
+- 文字版三国杀
+	[介绍](https://www.cnblogs.com/zkwang/p/12771330.html)  [仓库](https://github.com/wzk1015/sanguosha) 
+- 基物实验小程序 
+	[仓库](https://gitee.com/wojiaocbj/cbjtest_small_app)
 
-### 主页:   _www.wzk.plus_
-### 邮箱:   _wzk1015@buaa.edu.cn_
-### 博客园： _www.cnblogs.com/zkwang_
-### Github：_www.github.com/wzk1015_
+#### 主页       <www.wzk.plus>_
+#### 邮箱       <wzk1015@buaa.edu.cn>
+#### 博客园   <www.cnblogs.com/zkwang>
+#### Github <www.github.com/wzk1015>
 
