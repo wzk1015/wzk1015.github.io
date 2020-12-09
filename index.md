@@ -32,9 +32,11 @@
 
 ### 论文发表
 
-Confidence-aware Non-repetitive Multimodal Transformers for TextCaps (AAAI 2021) [[pdf]](https://arxiv.org/abs/2012.03662) [[code]](https://github.com/wzk1015/CNMT)
+Confidence-aware Non-repetitive Multimodal Transformers for TextCaps (AAAI 2021) 
 
 **Zhaokai Wang**, Renda Bao, Qi Wu, Si Liu*
+
+[[pdf]](https://arxiv.org/abs/2012.03662) [[code]](https://github.com/wzk1015/CNMT)
 
 ### 其他项目
 - HRM架构CPU设计 
@@ -44,8 +46,11 @@ Confidence-aware Non-repetitive Multimodal Transformers for TextCaps (AAAI 2021)
 - 基物实验小程序 
 	[仓库](https://gitee.com/wojiaocbj/cbjtest_small_app)
 
-#### 主页       <www.wzk.plus>_
-#### 邮箱       <self@wzk.plus>
-#### 博客园   <www.cnblogs.com/zkwang>
-#### Github <www.github.com/wzk1015>
+#### 主页       www.wzk.plus
+
+#### 邮箱       self@wzk.plus
+
+#### 博客园   www.cnblogs.com/zkwang
+
+#### Github www.github.com/wzk1015
 
