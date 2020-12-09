@@ -25,9 +25,16 @@
 - 北京航空航天大学 2018.9-
 
 ### 研究经历
+
 - 中科院自动化所暑期科研  2019.8
 - 北航Colab实验室实习       2019.7-
 - 哈佛大学远程科研项目      2020.7-2020.12
+
+### 论文发表
+
+Confidence-aware Non-repetitive Multimodal Transformers for TextCaps (AAAI 2021) [[pdf]](https://arxiv.org/abs/2012.03662) [[code]](https://github.com/wzk1015/CNMT)
+
+**Zhaokai Wang**, Renda Bao, Qi Wu, Si Liu*
 
 ### 其他项目
 - HRM架构CPU设计 
@@ -38,7 +45,7 @@
 	[仓库](https://gitee.com/wojiaocbj/cbjtest_small_app)
 
 #### 主页       <www.wzk.plus>_
-#### 邮箱       <wzk1015@buaa.edu.cn>
+#### 邮箱       <self@wzk.plus>
 #### 博客园   <www.cnblogs.com/zkwang>
 #### Github <www.github.com/wzk1015>
 
